@@ -1,1 +1,31 @@
+# QC de Lotes • POC (Streamlit + Hugging Face Hub + GitHub)
+
+Este projeto é um **prova de conceito (POC)** para automação do **Controle de Qualidade de Batatas Fritas**, utilizando **Visão Computacional** com:
+
+- **YOLO (fine-tuned)** para detecção de batatas  
+- **PCA / Skeleton / Híbrido** para medição de comprimento  
+- **Bucketização e Regras de Negócio (LIMITS)** para ACEITE/REJEITE de lotes  
+- **Streamlit** para interface web  
+- **Hugging Face Hub** para hospedar o modelo (`.pt`)  
+- **Streamlit Cloud (CPU)** para deploy acessível via navegador
+
+---
+
+## 🔧 Estrutura
+
+qc-streamlit/
+├─ app.py # Aplicação principal (Streamlit)
+├─ requirements.txt # Dependências do projeto
+├─ README.md # Este guia
+└─ .streamlit/
+└─ config.toml # Configuração de tema
+
+---
+
+## 🚀 Como rodar localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/<seu_usuario>/qc-streamlit.git
+   cd qc-streamlit
 
